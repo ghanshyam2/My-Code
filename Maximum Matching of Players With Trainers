@@ -1,0 +1,15 @@
+class Solution(object):
+    def matchPlayersAndTrainers(self, players, trainers):
+        players.sort()
+        trainers.sort()
+        n , m = len(players), len(trainers)
+        left, right = 0,0
+        count = 0
+        while left<n and right<m:
+            if players[left] <= trainers[right]:
+                count += 1
+                left += 1
+                right += 1
+            else:
+                right += 1
+        return count
