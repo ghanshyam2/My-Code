@@ -21,3 +21,4 @@ def allSmaller(nums):
 # ctrl +/ to comment multiple in Python
 
 print(allSmaller([8, 4, 5, 2, 1]))
+# output = {8:4,4:2,5:3,2:1,1:0}
