@@ -1,0 +1,13 @@
+def totalTime(self, n : int, arr : List[int], time : List[int]) -> int:
+        dict1 = {}
+        curr = -1
+        
+        for ele in arr:
+            curr += 1
+            if ele not in dict1:
+                dict1[ele] = curr
+            else:
+                passed = curr - dict1[ele]
+                curr += max(0, time[ele-1]-passed)
+                dict1[ele] = curr
+        return curr
