@@ -1,0 +1,14 @@
+def candiesKids(candies, extraCandies):
+  max_candy = max(candies)
+  listCandy = []
+
+  for i in range(len(candies)):
+    candies_sum = candies[i] + extraCandies
+    if candies_sum >= max_candy:
+      listCandy.append(True)
+    else:
+      listCandy.append(False)
+  return listCandy
+
+print(candiesKids([4,2,1,1,2], 1))
+print(candiesKids([12,1,12],10))
