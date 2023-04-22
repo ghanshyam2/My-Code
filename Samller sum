@@ -1,0 +1,14 @@
+def smallerSum(arr,n):
+    dict1 = {}
+        new_arr = arr.copy()
+        new_arr.sort()
+        count = 0
+        new_list = []
+        for num in range(n):
+            if new_arr[num] not in dict1:
+                dict1[new_arr[num]] = count 
+            count += new_arr[num]
+        for j in arr:
+            new_list.append(dict1[j])
+        return new_list
+ print(smallerSum([1,2,3],3))
