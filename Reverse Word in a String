@@ -1,0 +1,9 @@
+def reverseWords(s):
+        sp = s.strip().split(' ')
+        a = []
+        for e in sp:
+            if e != '':
+                a.append(e)         
+        return ' '.join(a[::-1]) 
+        
+print(reverseWords("the sky is blue")
