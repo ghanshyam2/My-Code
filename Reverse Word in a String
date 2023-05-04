@@ -6,4 +6,4 @@ def reverseWords(s):
                 a.append(e)         
         return ' '.join(a[::-1]) 
         
-print(reverseWords("the sky is blue")
+print(reverseWords("the sky is blue"))
