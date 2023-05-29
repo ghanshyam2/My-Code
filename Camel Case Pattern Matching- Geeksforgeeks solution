@@ -1,0 +1,12 @@
+
+class Solution:
+    def CamelCase(self,N,Dictionary,Pattern):
+        lis = []
+        for dic in Dictionary:
+            patt = "".join([ch for ch in dic if ch.isupper()])
+            if patt.startswith(Pattern):
+                lis.append(dic)
+        if len(lis) >= 1:
+            return lis
+        return [-1]
+   
