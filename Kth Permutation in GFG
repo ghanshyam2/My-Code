@@ -1,0 +1,25 @@
+def getPermutation(n, k):
+    fact = 1
+    nums = []
+    for i in range(1, n):
+        fact *= i
+        nums.append(i)
+    nums.append(n)
+    strr = ""
+    k -= 1
+    while True:
+        strr += str(nums[k // fact])
+        nums.pop(k//fact)
+        if not nums:
+            break
+        k %= fact
+        fact //= len(nums)
+    return strr
+
+if __name__ == "__main__":
+    n = 3
+    k = 5
+    
+    ans = getPermutation(n, k)
+    print("The Kth permutation sequence is", ans)
+        
