@@ -1,0 +1,10 @@
+def find_permutation(self, S):
+        perm = permutations(S,len(S))
+        lis = []
+        
+        for num in perm:
+            lis.append("".join(num))
+        lis = list(set(lis))
+        lis.sort()
+        return lis
+        
