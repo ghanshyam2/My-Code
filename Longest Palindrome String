@@ -1,0 +1,18 @@
+def longestPalin(self, S):
+        result = ""
+        s1 = 0
+        if S== S[::-1]:
+            return S
+        for i in range(len(S)):
+            st = ''
+            s2 = 0
+            for j in range(i, len(S)):
+                st += S[j]
+                s2 += 1
+                if st == st[::-1]:
+                    if s2>s1:
+                        result = st
+                        s1 = s2
+        return result
+        
+print(longestPalin("aaaaabbaa))
