@@ -1,3 +1,3 @@
 # My-Code
-Here is Solution for leetcode Questions.
-Fell free to recommend updates and any modifications
+Here is the Solution for leet code and other coding platform  Questions.
+Feel free to recommend updates and any modifications
